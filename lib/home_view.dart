@@ -25,25 +25,29 @@ class HomeView extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Column(
         children: [
-          // Large Box with Star Icon
           Container(
             width: 500,
             height: 200,
+            margin: EdgeInsets.all(10.0), // Adjust margin as needed
+            padding: EdgeInsets.all(10.0), // Adjust padding as needed
             color: Colors.grey,
             child: Stack(
               children: [
-                Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        'Show Balance',
-                        style: TextStyle(
-                          color: Colors.black,
-                          fontSize: 19.0,
+                const Padding(
+                  padding: EdgeInsets.all(9.0),
+                  child: Center(
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Show Balance',
+                          style: TextStyle(
+                            color: Colors.black,
+                            fontSize: 19.0,
+                          ),
                         ),
-                      ),
-                    ],
+                      ],
+                    ),
                   ),
                 ),
                 Positioned(
@@ -61,11 +65,14 @@ class HomeView extends StatelessWidget {
           // Connected Smaller Boxes
           Container(
             width: 500,
+            margin: EdgeInsets.all(10.0), // Adjust margin as needed
             child: Row(
               children: [
                 Expanded(
                   child: Container(
                     height: 60,
+                    margin: EdgeInsets.all(6.0), // Adjust margin as needed
+                    padding: EdgeInsets.all(10.0), // Adjust padding as needed
                     color: Colors.purple,
                     child: const Center(
                       child: Text(
@@ -81,6 +88,8 @@ class HomeView extends StatelessWidget {
                 Expanded(
                   child: Container(
                     height: 60,
+                    margin: EdgeInsets.all(6.0), // Adjust margin as needed
+                    padding: EdgeInsets.all(10.0), // Adjust padding as needed
                     color: Colors.purple,
                     child: const Center(
                       child: Text(
@@ -96,6 +105,7 @@ class HomeView extends StatelessWidget {
               ],
             ),
           ),
+
           const SizedBox(
             height: 20,
           ),
@@ -213,6 +223,7 @@ class HomeView extends StatelessWidget {
                 icon: const Icon(Icons.question_mark_outlined),
                 color: Colors.purpleAccent.shade400,
                 onPressed: () {},
+                tooltip: "Enter",
               ),
             ],
           ),
