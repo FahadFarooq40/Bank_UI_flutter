@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      title: 'Blank_System UI',
+      title: 'Blank_System_UI',
       debugShowCheckedModeBanner: false,
       home: HomeView(),
     );
